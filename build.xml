@@ -27,7 +27,7 @@
 		/>
 
 		<java
-			classname="ClockTest"
+			classname="${project.class}"
 			classpathref="project.classpath"
 			fork="true"
 			newenvironment="true"
