@@ -2,34 +2,16 @@
 
 public class ClockTest
 {
-    public static void main(String args[]) throws Exception
-    {
-        ExtClock clock1 = new ExtClock(6, 30, 0, 2);
+   public static void main(String args[]) throws Exception
+   {
+      ExtClock clock1 = new ExtClock(6, 30, 0, 2);
+      ExtClock clock2 = new ExtClock(6, 30, 0, 3);
+      Clock clock3 = new Clock(6, 30, 0);
 
-        System.out.println(clock1);
-        clock1.changeZone(2);
-        System.out.println(clock1);
-        clock1.changeZone(-3);
-        System.out.println(clock1);
-        clock1.changeZone(-12);
-        System.out.println(clock1);
-        clock1.changeZone(0);
-        System.out.println(clock1);
-        clock1.changeZone(11);
-        System.out.println(clock1);
-        clock1.changeZone(-10);
-        System.out.println(clock1);
-        clock1.changeZone(-6);
-        System.out.println(clock1);
-        clock1.changeZone(2);
-        System.out.println(clock1);
+      System.out.println(clock1.equals(clock2));
 
-        /*Clock clock2 = new ExtClock(0, 9, 0, 0);
+      clock1.makeCopy(clock2);
 
-        System.out.println(clock2);
-
-        Clock clock3 = new ExtClock(24, 20, 0, 0);
-
-        System.out.println(clock3);*/
-    }
+      System.out.println(clock1.equals(clock2));
+   }
 }
