@@ -1,0 +1,7 @@
+Book's LinkedListClass			Java's Vector					Java's ArrayList
+-------------------------		-------------------------		-------------------------
+1. isEmpty()					isEmpty()						isEmpty()
+2. retrieveAt(int)				get(int)						get(int)
+3. seqSearch(DataElement)		indexOf(Object)					indexOf(Object)
+4. removeAt(int)				remove(int)						remove(int)
+5. listSize()					size()							size()
