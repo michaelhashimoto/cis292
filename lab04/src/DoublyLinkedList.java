@@ -84,7 +84,7 @@ class DoublyLinkedList
     }
 
     public DataElement back() {
-        DataElement temp = first.info.getCopy();
+        DataElement temp = last.info.getCopy();
         return temp;
     }
 
@@ -208,15 +208,15 @@ class DoublyLinkedList
         }
     }
 
-    @SuppressWarnings("unused")
 	private void copy(DoublyLinkedList otherList) {
         System.out.println(
         	"The definition of the method copy is left as an exercise");
     }
 
     public DoublyLinkedList(DoublyLinkedList otherList) {
-        System.out.println(
-        	"The definition of the copy constructoris left as an exercise");
+        first = null;
+        last = null;
+        count = 0;
     }
 
     public void copyList(DoublyLinkedList otherList) {

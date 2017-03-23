@@ -200,5 +200,10 @@ public class UnorderedLinkedList extends LinkedListClass
         previousLinkedListNode.link = nextLinkedListNode;
 
         count--;
+
+        if (last.equals(currentLinkedListNode))
+        {
+        	last = previousLinkedListNode;
+        }
     }
 }
